@@ -1,0 +1,48 @@
+{
+  "name": "mpbf",
+  "version": "0.1.0",
+  "description": "a fork of pbf, the low-level, lightweight protocol buffer implementation in JavaScript, but built for ESM-based projects",
+  "main": "index.js",
+  "unpkg": "dist/mpbf.js",
+  "jsdelivr": "dist/mpbf.js",
+  "scripts": {
+    "build": "mkdirp dist && uglifyjs index.js -c -m -o dist/mpbf.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "compile.js"
+  ],
+  "bin": {
+    "mpbf": "bin/mpbf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:measuredweighed/mpbf.git"
+  },
+  "keywords": [
+    "protocol",
+    "buffer",
+    "pbf",
+    "mpbf",
+    "protobuf",
+    "binary",
+    "format",
+    "serialization",
+    "encoder",
+    "decoder"
+  ],
+  "author": "measuredweighed",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/measuredweighed/mpbf/issues"
+  },
+  "homepage": "https://github.com/measuredweighed/mpbf",
+  "dependencies": {
+    "resolve-protobuf-schema": "^2.1.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "uglify-js": "^3.17.4"
+  }
+}
