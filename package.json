@@ -1,6 +1,6 @@
 {
   "name": "mpbf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a fork of pbf, the low-level, lightweight protocol buffer implementation in JavaScript, but built for ESM-based projects",
   "main": "index.js",
   "unpkg": "dist/mpbf.js",
@@ -12,7 +12,7 @@
   "files": [
     "bin",
     "dist",
-    "compile.js"
+    "compile.cjs"
   ],
   "bin": {
     "mpbf": "bin/mpbf.cjs"
